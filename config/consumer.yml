@@ -1,0 +1,15 @@
+server:
+  port: 7000
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://user:123456@peer1:8761/eureka/,http://user:123456@peer2:8762/eureka/,http://user:123456@peer3:8763/eureka/
+spring:
+  application:
+    name: consumer
+
+feign:
+  hystrix:
+    enabled: true
