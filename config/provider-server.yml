@@ -10,3 +10,5 @@ eureka:
 spring:
   application:
     name: provider
+girl:
+  name: mmp
